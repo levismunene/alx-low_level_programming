@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 /**
  * main - Causes an infinite loop
- *
  * Description - Causes an infinite loop then breaks out of it
- *
  * Return: 0
  */
 
