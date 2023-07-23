@@ -2,7 +2,9 @@
 
 /*
  * main - Causes an infinite loop
- * Decription - Causes an infinite loop then breaks out of it
+ *
+ * Description - Causes an infinite loop then breaks out of it
+ *
  * Return: 0
  */
 
