@@ -57,7 +57,6 @@ void print_magic(unsigned char *e_ident)
 		printf("%02x", e_ident[index]);
 
 		if (index == EI_NIDENT - 1)
-
 			printf("\n");
 		else
 			printf(" ");
@@ -66,7 +65,7 @@ void print_magic(unsigned char *e_ident)
 
 /**
  * print_class - Prints the class of an ELF header.
- * @e_ident: A pinter to an array containing the ELF class.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_class(unsigned char *e_ident)
 {
@@ -294,7 +293,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	{
 		free(header);
 		close_elf(o);
-		dprintf(STDERR_FILENO, "Error: '%s': No such file\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
 
