@@ -3,12 +3,12 @@
 
 /**
  * read_textfile - reads a text file and prints it to POSIX stdout.
- * @fileneme: A pointer to the name of the file.
+ * @filename: A pointer to the name of the file.
  * @letters: The number of letters the
  *	     function should read and print.
  *
  * Return: If the function fails or filename is nNULL - 0.
- * 	   0/w - the actual number of bytes the function can read and print
+ * 0/w - the actual number of bytes the function can read and print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	r = read(o, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if (o == -1 || r == -1 || w == -1 ||w != r)
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(buffer);
 		return (0);

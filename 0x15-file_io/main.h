@@ -2,10 +2,14 @@
 #define MAIN_H
 
 /**
+ * main.h - main file for 0x15
  * File: ALXSE
  * Auth: Levis Munene
  * Desc: Header type containing description for all functions
- * 	 written in the 0x15-file_io directory.
+ * written in the 0x15-file_io directory.
+ * @filename: filename
+ * @letters: letters
+ * Return: dependent on function
  */
 
 #include <sys/types.h>
