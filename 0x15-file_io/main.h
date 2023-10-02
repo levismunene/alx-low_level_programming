@@ -6,7 +6,6 @@
  * declarations for reading text files
  * @filename: filename
  * @letters: letters
- * @text_content: text content
  * Return: number of characters read from the text file
  */
 
